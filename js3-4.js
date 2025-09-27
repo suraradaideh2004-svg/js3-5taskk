@@ -78,7 +78,14 @@ name: "sura",
 age: 21,
 gender: "Female"
 };
-let oobje=Object.assign(personn2);
+let ssss={
+    ggg:"jood",
+    age:11,
+
+}
+
+let oobje=Object.assign(personn2,ssss);
+
 console.log(oobje);
 /////////////////////////////////////////////
 let personn3 = {
@@ -87,6 +94,8 @@ age: 21,
 gender: "Female"
 };
 let oobject=Object.freeze(personn3);
+personn3.name="jood";
+delete personn3.age;
 console.log(oobject);
 ////////////////////////////////////
 let personn4 = {
@@ -95,4 +104,6 @@ age: 21,
 gender: "Female"
 };
 let oobjectt=Object.seal(personn4);
+;personn4.age=30,
+personn4.major="eng";
 console.log(oobjectt);
